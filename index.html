@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>保險拒賠經驗調查 / Insurance Denial Survey</title>
+<style>
+body{font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif;font-size:20px;line-height:1.6;margin:0;background:#f6f7f9;color:#1a1a1a}
+main{max-width:680px;margin:0 auto;padding:20px}
+.toggle{text-align:right}.toggle button{font-size:18px;padding:8px 14px;border:1px solid #2b5cab;background:#fff;color:#2b5cab;border-radius:8px}
+.intro{background:#fff8e1;border-left:5px solid #f0b400;padding:12px 16px;border-radius:6px}
+fieldset{background:#fff;border:1px solid #ddd;border-radius:10px;margin:18px 0;padding:14px 18px}
+legend{font-weight:600;padding:0 6px}
+label{display:block;padding:6px 0}input[type=radio]{transform:scale(1.4);margin-right:10px}
+textarea,input[type=email]{width:100%;box-sizing:border-box;font-size:20px;padding:10px;border:1px solid #bbb;border-radius:8px}
+button[type=submit]{width:100%;font-size:22px;padding:14px;background:#2b5cab;color:#fff;border:0;border-radius:10px}
+[data-lang=en] .zh,[data-lang=zh] .en{display:none}
+small{color:#555}
+</style>
+</head>
+<body data-lang="zh">
+<main>
+<div class="toggle"><button type="button" onclick="setLang(document.body.dataset.lang==='zh'?'en':'zh')"><span class="zh">English</span><span class="en">繁體中文</span></button></div>
+<h1><span class="zh">美國醫療保險拒賠經驗調查</span><span class="en">US Health Insurance Claim Denial Survey</span></h1>
+<div class="intro">
+<p class="zh">這是一項獨立研究，約需 2 分鐘。本調查不構成法律或醫療建議。<strong>請勿上傳或輸入任何醫療記錄、身份證號碼或保單號碼。</strong></p>
+<p class="en">This is independent research and takes about 2 minutes. It is not legal or medical advice. <strong>Please do not upload or type any medical records, ID numbers, or policy numbers.</strong></p>
+</div>
+<form action="https://formsubmit.co/a51004358@hotmail.com" method="POST">
+<input type="hidden" name="_subject" value="Insurance denial survey response">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_template" value="table">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<input type="hidden" name="ui_language" id="ui_language" value="zh">
+
+<fieldset><legend><span class="zh">1. 你或你的家人在美國曾否遇過醫療保險索償被拒？</span><span class="en">1. Have you or a family member in the US had a medical insurance claim denied?</span></legend>
+<label><input type="radio" name="q1_denied" value="yes" required><span class="zh">有</span><span class="en">Yes</span></label>
+<label><input type="radio" name="q1_denied" value="no"><span class="zh">沒有</span><span class="en">No</span></label></fieldset>
+
+<fieldset><legend><span class="zh">2. 最近一次是關於甚麼？</span><span class="en">2. What was it for most recently?</span></legend>
+<label><input type="radio" name="q2_type" value="drug"><span class="zh">藥物</span><span class="en">Drug</span></label>
+<label><input type="radio" name="q2_type" value="surgery"><span class="zh">手術</span><span class="en">Surgery</span></label>
+<label><input type="radio" name="q2_type" value="test"><span class="zh">檢查／化驗</span><span class="en">Test</span></label>
+<label><input type="radio" name="q2_type" value="emergency"><span class="zh">急症</span><span class="en">Emergency</span></label>
+<label><input type="radio" name="q2_type" value="other"><span class="zh">其他</span><span class="en">Other</span></label></fieldset>
+
+<fieldset><legend><span class="zh">3. 收到拒賠信時，你看得明白嗎？</span><span class="en">3. When you got the denial letter, could you understand it?</span></legend>
+<label><input type="radio" name="q3_understand" value="fully"><span class="zh">完全明白</span><span class="en">Fully</span></label>
+<label><input type="radio" name="q3_understand" value="half"><span class="zh">一半</span><span class="en">About half</span></label>
+<label><input type="radio" name="q3_understand" value="not_at_all"><span class="zh">完全不明白</span><span class="en">Not at all</span></label></fieldset>
+
+<fieldset><legend><span class="zh">4. 你最後如何處理？</span><span class="en">4. How did you handle it?</span></legend>
+<label><input type="radio" name="q4_handled" value="paid"><span class="zh">自己付款</span><span class="en">Paid it</span></label>
+<label><input type="radio" name="q4_handled" value="provider_resubmit"><span class="zh">請醫療機構重新提交</span><span class="en">Asked the provider to resubmit</span></label>
+<label><input type="radio" name="q4_handled" value="formal_appeal"><span class="zh">正式上訴</span><span class="en">Filed a formal appeal</span></label>
+<label><input type="radio" name="q4_handled" value="gave_up"><span class="zh">放棄</span><span class="en">Gave up</span></label></fieldset>
+
+<fieldset><legend><span class="zh">5. 最困難的部分是甚麼？</span><span class="en">5. What was the hardest part?</span></legend>
+<small class="zh">請勿填寫任何個人或醫療資料。</small><small class="en">Please do not include personal or medical details.</small>
+<textarea name="q5_hardest" rows="4" maxlength="1000"></textarea></fieldset>
+
+<fieldset><legend><span class="zh">6. 如果有工具能讀懂你的拒賠信，並告訴你應該付款、找醫療機構，還是上訴，你願意付多少？</span><span class="en">6. If a tool read your denial letter and told you whether to pay, ask the provider, or appeal, what would you pay?</span></legend>
+<label><input type="radio" name="q6_price" value="free_only"><span class="zh">只會用免費的</span><span class="en">Only if free</span></label>
+<label><input type="radio" name="q6_price" value="usd10"><span class="zh">US$10</span><span class="en">US$10</span></label>
+<label><input type="radio" name="q6_price" value="usd29"><span class="zh">US$29</span><span class="en">US$29</span></label>
+<label><input type="radio" name="q6_price" value="more"><span class="zh">更多</span><span class="en">More</span></label></fieldset>
+
+<fieldset><legend><span class="zh">7. 你偏好哪種語言？</span><span class="en">7. Which language do you prefer?</span></legend>
+<label><input type="radio" name="q7_language" value="chinese"><span class="zh">中文</span><span class="en">Chinese</span></label>
+<label><input type="radio" name="q7_language" value="english"><span class="zh">英文</span><span class="en">English</span></label>
+<label><input type="radio" name="q7_language" value="other"><span class="zh">其他</span><span class="en">Other</span></label></fieldset>
+
+<fieldset><legend><span class="zh">8. 推出時通知我（選填）</span><span class="en">8. Email me at launch (optional)</span></legend>
+<input type="email" name="email" autocomplete="email" placeholder="you@example.com"></fieldset>
+
+<button type="submit"><span class="zh">提交</span><span class="en">Submit</span></button>
+</form>
+</main>
+<script>
+function setLang(l){document.body.dataset.lang=l;document.documentElement.lang=l==='zh'?'zh-Hant':'en';document.getElementById('ui_language').value=l;}
+if(/^en/i.test(new URLSearchParams(location.search).get('lang')||'')) setLang('en');
+</script>
+</body>
+</html>
